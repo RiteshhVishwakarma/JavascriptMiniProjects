@@ -1,0 +1,105 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+html, body{
+    background-color: #FFFAB8;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    font-size: 10px;
+}
+
+#container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    height: 8rem;
+    width: 100vw;
+    background-color: #FFEE00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+nav p{
+    font-size: 3rem;
+    font-weight: 900;
+    color: #002FFF;
+}
+
+#cards{
+    display: flex ;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    width: 20rem;
+    height: 20rem;
+    background-color: #FFEE00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 2rem;
+    border: 2px solid black;
+}
+
+.card a{
+    color: #002FFF;
+    font-size: 2.5rem;
+    text-decoration: none;
+}
+
+
+@media (max-width: 769px) {
+    nav{
+        height: 4.5rem;
+    }
+    nav p{
+        font-size: 2rem;
+        font-weight: 900;
+        color: #002FFF;
+    }
+    .card{
+        width: 10rem;
+        height: 10rem;
+    }
+
+    .card a{
+        
+        font-size: 2rem;
+    }
+  }
+
+/* 
+@media (max-width: 425px) {
+    nav{
+        height: 13rem;
+    }
+    nav p{
+        font-size: 1.8rem;
+        font-weight: 900;
+        color: #002FFF;
+    }
+    .card{
+        width: 10rem;
+        height: 10rem;
+    }
+
+    .card a{
+        
+        font-size: 2rem;
+    }
+  }
+ */
