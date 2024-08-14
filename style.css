@@ -55,6 +55,13 @@ nav p{
     border: 2px solid black;
 }
 
+.card :hover{
+    color: black;
+    border-bottom: 1px solid black;
+    animation: hinge; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 1s; /* don't forget to set a duration! */
+}
+
 .card a{
     color: #002FFF;
     font-size: 2.5rem;
