@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <title>Project 1</title>
     <style>
         *{
@@ -17,6 +21,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            background-color: #FFFAB8;
         }
         h1{
             font-size: 2rem;
@@ -30,7 +35,7 @@
             margin-top: 5rem;
             width: 50rem;
             height: 40rem;
-            background-color: yellow;
+            background-color: rgb(255, 255, 46);
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -47,24 +52,35 @@
     
         button{
             margin-top: 1rem;
-            background-color: blue;
+            background-color: rgb(67, 67, 253);
             color: yellow;
             padding: 1rem;
         }
-        #btn{
-            text-decoration: none;
+        a{
+            color: blue;
+            font-size: 2rem;
+            border: 1px solid black;
+            padding: 1rem;
+            animation: shakeX;
+            animation-duration: 2s; 
+        }
+
+        button:hover{
+            animation: shakeX;
+            animation-duration: 2s;
+            background-color: #009307;
         }
 
         @media(max-width:600px){
             html, body{
-            font-size: 7px;
+            font-size: 8px;
         }
         }
     </style>
 </head>
 <body>
     <h1>Create a HTML page with a button. When the button is clicked, change the text of a paragraph element.</h1>
-    <button id="btn"><a href="index.html">Back to home</a></button>
+    <a href="index.html">Back To Home</a>
 
     <div id="container">
 
@@ -81,6 +97,7 @@
 
         btn.addEventListener('click', function(){
             para.textContent = "Paragraph change ho gya"
+            btn.textContent = "Please Refresh Page"
         })
     </script>
 </body>
