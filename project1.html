@@ -4,8 +4,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project 1</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        html, body{
+            font-size: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        h1{
+            font-size: 2rem;
+            text-align: center;
+            margin: 1.5rem;
+            border-bottom: 2px solid black;
+            color: blue;
+        }
+
+        #container{
+            margin-top: 5rem;
+            width: 50rem;
+            height: 40rem;
+            background-color: yellow;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid black;
+        }
+
+        #paragraph{
+            color: blue;
+            font-size: 2rem;
+            text-align: start;
+            padding-left: .5rem;
+        }
+    
+        button{
+            margin-top: 5rem;
+            background-color: blue;
+            color: yellow;
+            padding: 1rem;
+        }
+
+        @media(max-width:600px){
+            html, body{
+            font-size: 7px;
+        }
+        }
+    </style>
 </head>
 <body>
-    <h1>Pending</h1>
+    <h1>Create a HTML page with a button. When the button is clicked, change the text of a paragraph element.</h1>
+
+    <div id="container">
+
+        <p id="paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate dolore sapiente, sunt ducimus neque reiciendis cumque impedit distinctio. Fugit totam maxime laboriosam quaerat mollitia qui laborum adipisci? Ullam, iusto omnis.</p>
+
+        <button>Click Me</button>
+
+    </div>
+
+
+    <script>
+        var para = document.querySelector("#paragraph")
+        var btn = document.querySelector("button")
+
+        btn.addEventListener('click', function(){
+            para.textContent = "Paragraph change ho gya"
+        })
+    </script>
 </body>
 </html>
